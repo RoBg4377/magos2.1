@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iniciarte</title>
+    <link rel="stylesheet" href="css/normalize.css">    
+    <link rel="stylesheet" href="libs/icoRBG-v1.0/style.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">  
+  </head>
+<body>
+  <div class="baner iniciacion2">
+    <audio autoplay loop controls>
+      <source src="/audio/cancion05.mp3" type="audio/mp3" >
+    </audio>
+  </div>
+  
+  <header class="encabezado">  
+    <div><span class="ico ico-tauta logo"></span></div>
+    <div class="menu" >
+      <span class="ico ico-menu" type="button" onclick="mostrarMenu();"></span>
+    </div>    
+    <h1 class="titulo">Iniciarte</h1>
+      <div class="navegacion" id="navegacion"> 
+        <nav class="nav-principal" > 
+          <span class="ico ico-Religio cerrar" type="button" onclick="cerrarMenu();"></span>
+          <ul class="nav">
+            <div class="botones-nav">     
+              <a href="index.html" class="boton-individual"><li>INICIO</li></a>
+              <a href="tautauqlond.html"  class="boton-individual"><li>TAUTAQUELONDE</li></a>
+              <a href="magos.html"  class="boton-individual"><li>MAGOS</li></a>
+              <a href="bestiario.html"  class="boton-individual"><li>BESTIARIO</li></a>
+              <a href="iniciarte.html"  class="boton-individual"><li>INICIARTE</li></a>
+            </div> 
+            <div class="arbolito"><img src="images/religion_logo.png" alt=""></div>  
+          </ul>        
+        </nav>
+      </div>
+        <script type="text/javaScript">
+          function mostrarMenu() {
+            document.getElementById('navegacion').style.display = 'block';
+          }
+          function cerrarMenu() {
+            document.getElementById('navegacion').style.display = 'none';
+          }
+        </script>  
+  </header>
+
+  <main class="formulario">
+    <form action="" class="iniciacion">
+          <div >
+            <h2>Entra a Tautaquelonde</h2>
+              <h3>Crea tu personaje</h3>
+              <label for="ponle un nombre">Ponle un nombre:
+                <input type="text" name="ponle un nombre" id="ponle  un nombre">
+              </label>
+              <fieldset>
+                <legend><h3>Tipo de Criatura</h3></legend>
+                  <input type="radio" id="humano" name="tipo de criatura" value="humano"> Humano
+                  <label for="humano"></label> <br>
+                  <input type="radio" id="antropomorfico" name="tipo de criatura" value="antropomorfico"> Antropómorfico
+                  <label for="antropomorfico"></label> <br>
+              </fieldset>
+              <fieldset>
+                <legend><h3>Edad de tu personaje</h3></legend>
+                <input type="date" name="edad de tu personaje" id="edad">
+                <label for="edad">fecha de nacimiento</label>
+              </fieldset>
+              <fieldset>
+                <legend><h3>Oficio o tribu</h3></legend>
+                  <input type="radio" name="oficio o tribu" id="granjero" value="granjero">Granjero
+                  <label for="granjero"></label><br>
+                  <input type="radio" name="oficio o tribu" id="cazador" value="cazador">Cazador
+                  <label for="cazador"></label><br>
+                  <input type="radio" name="oficio o tribu" id="comerciante" value="comerciante">Comerciante
+                  <label for="comerciante"></label><br>
+                  <input type="radio" name="oficio o tribu" id="tribu del bosque" value="tribu del bosque">Tribu del bosque
+                  <label for="tribu del bosque"></label><br>
+                  <input type="radio" name="oficio o tribu" id="tribu del lago" value="tribu del lago">Tribu del lago
+                  <label for="tribu del lago"></label><br>
+                  <input type="radio" name="oficio o tribu" id="tribu de las montanas" value="tribu de las montañas">Tribu de las montañas
+                  <label for="tribu de las montañas"></label>
+
+              </fieldset>
+  
+              <h3>Lugar donde iniciarás tu aventura</h3>
+              <h3>Tu especialidad</h3>
+          </div>
+        </form>   
+
+        <hr>
+
+        <form action="" class="contacto">
+          <div>
+            <h2>Contacto</h2>
+          </div>
+        </form>
+        <hr>
+  
+  </main>
+  
+  <footer>
+    <div class="iner">
+      <ul class="icons">
+        <li class="icon"><a href="#" ><span class="label"><img src="images/facebook.png" alt="" class="iamgen"></span></a></li>
+        <li class="icon"><a href="#" ><span class="label"><img src="images/twitter.png" alt=""class="iamgen"></span></a></li>
+        <li class="icon"><a href="#" ><span class="label"><img src="images/instagram.png" alt=""class="iamgen"></span></a></li>
+        <li class="icon"> <a href="#" ><span class="label"><img src="images/linkedin.png" alt=""class="iamgen"></span></a></li>
+      </ul>
+    </div>
+    <h4 class="copy"> &copy; Derechos Reservados 2022 - Autor: Rodrigo Benavides</h4>
+  </footer>
+</div> 
+  
+
+  
+</body>
+</html>

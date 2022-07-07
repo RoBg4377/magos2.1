@@ -1,0 +1,665 @@
+* {
+box-sizing: border-box;
+}
+:root {
+  --oscuro1: #191A19;
+  --oscuro2: #1E5128;
+  --claro1: #4E9F3D;
+  --claro2: #D8E9A8;
+}
+body {
+  background: var(--oscuro2);
+  background-image: url(../images/fondo\ cabecera.png);
+  width:100%;
+  overflow-x:hidden;
+}
+.baner{
+  position: relative;
+  margin-inline-end: 0;
+  margin-inline-start: 0;
+  margin-block-end: 0px;
+  margin-block-start: 0;
+  width: 100%;
+  height: 85vmin;
+  background: var(--oscuro1) fixed no-repeat;
+  background-size: cover;
+
+}
+.index {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/tatua01.jpg);
+}
+.tautaquelonde {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/tauta02.jpg);
+}
+.magos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/006.jpg);
+}
+.bestiario {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/007.jpg);
+}
+.iniciacion2 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/004.jpg); 
+}
+.poesias {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../images/019.jpg);
+}
+.encabezado {
+  height: 14vmin;
+  z-index: 9;
+  width: 100%;
+  background-color: var(--oscuro1);
+  color: var(--oscuro2);
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: sticky;
+  top: 0;
+}
+.encabezado .logo { 
+  float: left; 
+  font-size: 8vmin;
+  margin-left:3vmin;
+  margin-top: 1.7vmin;
+}
+h1 {
+  width:90vmin ;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2vmin;
+  margin-bottom: 2vmin; 
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 6vmin;
+  text-align: center;  
+}
+.ico-menu:hover{
+  color: var(--claro1);
+  transform: translateY(-2.5px);
+  text-shadow: 2px 3px 20px #D8E9A8;
+  
+}
+.ico-menu {
+  float: right;
+  width: 7vmin;
+  height: 7vmin;
+  top: 0px;
+  margin-top: 1.7vmin;
+  margin-right: 3vmin;
+  font-size: 7vmin;
+  font-weight: bold;
+  color: var(--oscuro2);
+  text-align: center;
+
+}
+.musica {
+  background-color: var(--claro2);
+  margin-left: 3vmin;
+  margin-top: 4vmin;
+}
+.introduccion {
+  margin-top: 13vmin;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  height: 55%;  
+  text-align: center;
+  padding-top: 1vmin;
+  font-family: 'Dosis', sans-serif;
+  color: var(--claro2); 
+  font-size: 2.1vmax;
+  background-color: var(--oscuro2);
+  box-shadow: 0px 0px 10px 15px var(--oscuro1);
+}
+.introduccion:hover {
+  outline: solid;
+}
+.navegacion {
+  position:absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 99%;
+  margin: auto;
+  margin-top: 7%;
+  background-color: #0f0e0e94;
+  background-image: url(../images/fondo1.png);
+  background-size: 100% 100%;
+  background-repeat:no-repeat; 
+  border: solid 6px var(--oscuro2);
+  height:80vmin;
+  font-size: 1.5vmin;
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+#navegacion {
+  display: none;
+  animation-name: aparecer;
+  animation-duration: 3s;
+}
+@keyframes aparecer {
+  0% {
+    margin-top: -300px;
+    opacity: 0.1;
+  }
+  100%{
+  }
+}
+
+.nav-principal {
+  text-align: center;
+  font-family: 'Dosis', sans-serif;
+  font-weight: bold;
+  font-size: 3.5vmin;
+  color: var(--claro2);
+}
+.cerrar{
+  font-size: 4vmin;
+  color: red;
+  display: inline;
+  float: right;
+  padding: 0;
+  margin: 0;
+  margin: 1vmax 2.5vmax;
+  background-color: var(--oscuro2);
+  color: var(--claro2);
+  border-radius: 50%;
+  width: 3vmin;
+  height: 3vmin;
+  text-align: center;
+  box-shadow: 0 1px 10px rgb(0,0,0);
+  font-size: 3vmin;
+}
+.cerrar:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+.nav-principal h2:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: var(--claro2);
+}
+.arbolito [src]{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10vmin;
+  width: 15vmin;
+  height: 15vmin;
+  background-color: var(--oscuro2);
+  border-radius: 50%;
+}
+.nav {
+  padding: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  width:35vmax;
+  height: 75vmin;
+  background-image: url(../images/more-leaves.png);
+  list-style: none;
+}
+.botones-nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35vmin;
+  margin-top: 3vmax;
+}
+.boton-individual {
+  color: var(--claro2);
+  text-decoration: none;
+}
+.botones-nav li {
+  background-color: var(--oscuro1); 
+  padding: 1vmin;
+  margin-bottom: 3vmin;
+  border: solid 2px;
+  border-radius: 5vmax;
+  box-shadow: 0 1px 10px rgb(0,0,0);
+}
+.nav li:hover {
+  transform: scale(1.2);
+  background-color: var(--claro1);
+  cursor: pointer;
+}
+.boton-menu {
+  background-color: var(--oscuro2); 
+  border-radius: 20%;
+  border: solid 2px var(--claro2);
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+  margin-bottom: 30vmax;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  background-color: var(--claro1);
+}
+
+.boton-entrada {
+  position: relative;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3vmin;
+  margin-bottom: 3vmin;
+  width: 50vmin;
+  height: 11vmin;
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 3vmin;
+  background-color: var(--oscuro1);
+  color: var(--claro);
+  border: solid;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}
+.navegacion2 {
+  position: absolute;
+  display: inline;
+  z-index: 7;
+  top: 0;
+  bottom: 0;
+  margin-top: 65vmin;
+  width: 100%;
+  height: 35vmin;
+  background-image: url(../images/magoa\ oscuras.jpg);
+  background-position: center;
+  animation-name: subir;
+  animation-duration: 1.5s;
+  position: fixed;
+  display: none;
+  
+}
+@keyframes subir {
+  0% {
+    top: 40vmax;
+  }
+  100% {
+
+  }
+}
+.nave-grupo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.nave {
+  margin-top: 4vmin;
+  margin-bottom: 1vmin;
+  margin-left: 15vmin;
+  margin-right: 3vmin;
+  display: inline;
+  float: left;
+  z-index: 9;
+  height: 12vmin;
+  width: 12vmin;
+  border-radius: 50%;
+
+}
+.nave:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.articulos {
+  z-index: 10;
+  position: absolute;
+  display: inline;
+  float: left;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  height: 130vmin;
+  margin: auto;
+  margin-top: 90vmin;
+  padding: 10vmin;
+  background-image: url(../images/papel\ viejo.jpg);
+  background-size:cover;
+  background-repeat: none;
+  color: var(--oscuro1);
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+  font-family: 'Macondo Swash Caps', cursive;
+  font-size: 4vmin;
+  font-weight: bold;
+  animation-name: subir;
+  animation-duration: 1.5s;
+  overflow-y: scroll;
+}
+#geografia {
+  display: none;
+}
+#religion {
+  display: none;
+}
+#politica {
+  display: none;
+}
+#documentos {
+  display: none;
+}
+
+.img-geografia {
+  display: flex;
+  float: right;
+  width: 50%;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 4vmin;
+  
+}
+.img-geografia [src] {
+  display: flex;
+  float: right;
+  width: 100%;padding-top: 5vmin;
+  padding-bottom: 3vmin;
+  padding-left: 2vmin;
+  padding-right: 2vmin; 
+}
+
+
+.img-religion {
+  display: flex;
+  float: right;
+  width: 50%;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 4vmin;
+  
+}
+.img-religion [src] {
+  display: flex;
+  float: right;
+  width: 100%;padding-top: 5vmin;
+  padding-bottom: 3vmin;
+  padding-left: 2vmin;
+}
+
+
+
+.img-politica {
+  display: flex;
+  float: right;
+  width: 50%;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 4vmin;
+  
+}
+.img-politica [src] {
+  display: flex;
+  float: right;
+  width: 100%;padding-top: 5vmin;
+  padding-bottom: 3vmin;
+  padding-left: 2vmin;
+  padding-right: 2vmin; 
+}
+
+
+
+.img-heraldica {
+  display: flex;
+  float: right;
+  width: 50%;
+  margin-left: 1px;
+  margin-right: 1px;
+  margin-top: 4vmin;
+  
+}
+.img-heraldica [src] {
+  display: flex;
+  float: right;
+  width: 100%;padding-top: 5vmin;
+  padding-bottom: 3vmin;
+  padding-left: 2vmin;
+  padding-right: 2vmin; 
+}
+.iniciacion {
+  background-color: var(--oscuro1);
+  color: var(--claro2);
+  font-family: 'Macondo Swash Caps', cursive;
+}
+.iner {
+  width: 100%;
+  position: relative;
+  top: 3vmin;  
+  background-color: var(--oscuro1);
+}
+.icons {
+  list-style: none;
+  width: 60vmin;
+  margin-left: auto;
+  margin-right: auto;
+  height: 18vmin;
+}
+.icon{
+  display: inline;
+}
+.iamgen{ 
+  width: 5vmin;
+  margin-top: 4.5vmin;
+  margin-left: 7.5vmin;
+}
+.icon :hover {
+    transform: scale(1.3);
+    cursor: pointer;
+  }
+h4 {
+  margin-bottom: 0;
+  margin-top: 0;
+  height: 8vmin;
+  padding-top: 2vmin;
+  background-color: #ECDBBA;
+  color: var(--claro1);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+}
+/* tautaquelonde */
+.principal2 {
+  background-color: var(--oscuro1);
+  width: 100%;
+  height: 100%;
+
+}
+.tema1 {
+  display: flex;
+  width: 100%;
+  height: 70vmin;
+  
+}
+.picture1 {
+  background-image: url(../images/011.jpg);
+  background-size:cover;
+  width: 50%;
+}
+.articulo1 {
+  background-color: var(--claro1);
+  width: 50%;
+}
+
+.contenido1 {
+  margin: 10vw auto;
+  width: 60%;
+  font-family: 'Macondo Swash Caps', cursive;
+  color: var(--claro2);
+  font-size: 2.8vmin;
+}
+.articulo1:hover {
+  background-color: #ecdbba44;
+  cursor: pointer;
+}
+.mas-info {
+  position: relative;
+  top: 3vmin;
+  left: 3vmin;
+  border: solid 0.5vmin var(--claro2);
+  box-shadow: 0 10px 20px rgb(0, 0, 0);
+}.picture [src] {
+  background-image: url(../images/011.jpg);
+  background-size:cover;
+  width: 100%;
+  height: 100%;
+}
+.tema2 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  width: 100%;
+  height: 70vmin;  
+}
+.articulo2 {
+  background-color: var(--oscuro2);
+  width: 50%;
+}
+.contenido2{
+  margin: 10vw auto;
+  width: 60%;
+  font-family: 'Macondo Swash Caps', cursive;
+  color: var(--claro2);
+  font-size: 2.8vmin;
+}
+.articulo2:hover {
+  background-color: #ecdbba44;
+  cursor: pointer;
+}
+.encabezado-poesias{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70% ;
+  background-color: var(--claro1);
+  color: var(--claro2);
+  font-size: 4vmin;
+  font-family: 'Macondo Swash Caps', cursive;
+  padding: 1vmin 5vmin;
+  margin-top: 3vmin;
+  text-align: center;
+  border-radius: 30px;
+
+}
+.poesias01 { 
+  justify-content: center;
+  margin: 20vmin auto;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(8vmin, 25vmin));
+  grid-template-rows:repeat(3, minmax(9vmin, 30vmin)) ;
+  grid-gap: 7vmin 9vmin;
+  grid-template-areas: 
+  "sup sup sup sup"
+  "med med med med"
+  "inf inf inf inf";
+  vertical-align: middle;
+}
+.poema {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  border-radius: 30px;
+  overflow: hidden;
+  border: solid 1px var(--claro2);
+  background-color: var(--claro2);
+  box-shadow: 10px 10px 20px 15px black;
+  color: var(--claro2);
+  font-size: 2vmin;
+  background-size: 100%;
+  transition: 0.7s;
+}
+.poema:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  opacity: 100%;
+}
+.titulo-poema{
+  text-align: center;
+  padding: 2vmin 2vmin ;
+  margin: auto auto;
+  opacity: 0;
+}
+.titulo-poema:hover{
+  opacity: 100%;
+}
+.poesia1 {
+  background-image: url(../images/014b.jpg);
+  background-size: cover;
+}
+.poesia1:hover{
+  background-image:url(../images/014c.jpg);
+  background-size: cover;
+}
+.poesia2 {
+  background-image: url(../images/valioshke2.jpg);
+  background-size: cover;
+}
+.poesia2:hover {
+  background-image: url(../images/valioshke2b.jpg);
+  background-size: cover;
+}
+.poesia3 {
+  background-image: url(../images/destierro.jpg);
+  background-size: cover;
+}
+.poesia3:hover {
+  background-image: url(../images/destierrob.jpg);
+  background-size: cover;
+}
+.contenedorA {
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 90vmin;
+  z-index: 9999;
+  width: 99%;
+  height: 180vmin;
+  background-color:#e9e9e96e;
+  backdrop-filter: blur(20px);
+  line-height: 10vmin;
+  padding-top: 20vmin;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  display: none;
+}
+.contenedor1 {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vmin 4vmin;
+  background-image: url(../images/papel\ viejo.jpg);
+  background-size: cover;
+  width: 80%;
+  height: 90%;
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: 'Homemade Apple', cursive;
+  line-height: 10vmin;
+  overflow-y: scroll;
+  transition: 3s;
+}
+.contenedorMago {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2vmin 4vmin;
+  width: 80%;
+  height: 90%;
+  background-color:#d8e9a8c2;
+  text-align: center;
+  font-size: 2.5vw;
+  font-family: 'Macondo Swash Caps', cursive;
+  line-height: 10vmin;
+  overflow-y: scroll;
+  transition: 3s;
+}
+.firma{
+  text-align: right;
+}
+
+
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historias de Tautaquelonde</title>
+  <script src="js/efectos.js"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="libs/icoRBG-v1.0/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="baner index"> 
+    <audio autoplay loop controls>
+      <source src="/audio/cancion de pipin.mp3" type="audio/mp3" >
+    </audio>
+  </div>
+  
+  <header class="encabezado">  
+    <div><span class="ico ico-tauta logo"></span></div>
+    <div class="menu" >
+      <span class="ico ico-menu" type="button" onclick="mostrarMenu();"></span>
+    </div>    
+    <h1 class="titulo">Historias de Tautaquelonde</h1>
+      <div class="navegacion" id="navegacion"> 
+        <nav class="nav-principal" > 
+          <span class="ico ico-Religio cerrar" type="button" onclick="cerrarMenu();"></span>
+          <ul class="nav">
+            <div class="botones-nav">     
+              <a href="tautauqlond.html" class="boton-individual"><li>TAUTAQUELONDE</li></a>
+              <a href="magos.html"  class="boton-individual"><li>MAGOS</li></a>
+              <a href="bestiario.html"  class="boton-individual"><li>BESTIARIO</li></a>
+              <a href="poesia.html"  class="boton-individual"><li>POESIA</li></a>
+              <a href="iniciarte.html"  class="boton-individual"><li>INICIARTE</li></a>
+            </div> 
+            <div class="arbolito"><img src="images/religion_logo.png" alt=""></div>  
+          </ul>        
+        </nav>
+      </div>
+      
+       
+  
+  </header>
+
+ <nav class="navegacion2" id="navegacion2">
+  <span class="ico ico-Religio cerrar" type="button" onclick="cerrarMenu2();"></span>
+    <div class="nave-grupo">
+      <div ><a href="#"></a><img src="images/logo2.png" alt="" title="Geografía"class="nave" type="button" onclick="mostrarGeografia();"></div>
+      <div ><a href="#"></a><img src="images/religion_logo.png" alt="" title="Religión" class="nave" type="button" onclick="mostrarReligion();"></div>
+      <div ><a href="#"></a><img src="images/logo_politica.png" alt="" title="Política" class="nave" type="button" onclick="mostrarPolitica();"></div>
+      <div ><a href="#"></a><img src="images/heraldica_logo.png" alt="" title="Documentos"class="nave" type="button" onclick="mostrarHeraldica();"></div>
+    </div>
+  </nav>
+  
+  <div class="cuerpo"> 
+    
+    <main class="principal">
+        
+        <section>
+          <div class="introduccion">
+              <p>Según muestra los registros, Tautaquelonde fue un territorio ubicado en la parte más austral y continental de Arcania.</p>
+              <p>En él se establecieron diferentes dinastías que lucharon por el poder y es donde hubo seres con artes misteriosas que los táutalos llamaron magos y hechiceras. También se cuenta que hubo criaturas extrañas en los rincones lejanos de los bosques, ríos, lagos y montañas.</p>
+              <p>Esta página es un recopilatorio de los documentos que llegaron a nuestros días y trata de reconstruir para los interesados, la historia, la cultura y el aspecto de este mundo y sus habitantes.
+              Saludos a todos los curiosos. Recorran junto a nosotros estas hermosas tierras.</p>
+            <br>
+          
+
+          <button type="button" onclick="mostrarMenu2();" class="boton-entrada">Comienza tu peregrinaje, viajero. </button></div>
+          <div class="art">
+
+            <div tabindex="1" class="articulos geografia" id="geografia">
+              <h2 class="icon-clear cerrar" onclick="cerrarGeografia();"></h2>
+              <div class="img-geografia"><a href="/images/mapa_tautales.jpg" target="_blank"><img src="/images/mapa_tautales.jpg" alt="mapa""></a></div>
+              <h2 class="titulo2"><u>Geografía</u></h2>
+              <p>
+              <strong>Tautaquelonde</strong> se extiende desde el <em>mar De Santiago</em>  al sur y <em>Shanca</em> al norte (donde comienzan los territorios desconocidos). El sol alumbra primero a las naciones de <em>Fart-Mous</em> y <em>Coch</em>. Y desaparece al hundirse el gran <em> océano de Quiet</em>. Los desiertos de los valles de arena se encuentras antes de ese mar. Los <em> Bosques Augurios </em>limitan a <em>Fart-Mous</em> y algo hacia el sur. Y toda la región  montañosa y del altiplano nos llevan a las tierras desconocidas. Estas regiones son famosas por ser el lugar donde nacieron los magos y hechiceras que más conocemos. Pero la región central de <em> Tatúales</em> es la cuna de la hechicera Valioshke quizás la más poderosa que Tautaquelonde haya recibido.
+              </p>
+              <img src="images/" alt="">
+              <script type="text/javaScript">
+                function mostrarGeografia() {
+                  document.getElementById('geografia').style.display = 'block';
+                }
+                function cerrarGeografia() {
+                  document.getElementById('geografia').style.display = 'none';
+                }
+              </script>
+            </div>
+
+            <div tabindex="1" class="articulos religion" id="religion">
+              <h2 class="icon-clear cerrar" onclick="cerrarReligion();"></h2>
+              <div class="img-religion"><a href="/images/dipara.jpg" target="_blank"><img src="/images/dipara.jpg" alt="dipara""></a></div>
+              <h2 class="titulo2"><u>Religión</u></h2>
+              <p>
+              El panteón de Dioses es muy numeroso, pero dos son los dioses principales que manejan los poderes que dan vida a la magia de la tierra. Liberustel y Mamsocia. La energía masculina y femenina, el día y la noche, la fuerza y el conocimiento. Entidades duales, pero no antagónicas que buscan el bienestar de sus creaciones, pero mediante métodos diferentes. No intervienen directamente en las cuestiones políticas de los territorios. Son sus seguidores los que usan el poder que provienen de ellos y buscan hacerse del dominio de Tautaquelonde y conseguir así la paz y el bienestar al poner fin a las disputas entre ellos.
+              </p>
+              <script type="text/javaScript">
+                function mostrarReligion() {
+                  document.getElementById('religion').style.display = 'block';
+                }
+                function cerrarReligion() {
+                  document.getElementById('religion').style.display = 'none';
+                }
+              </script>
+            </div>
+
+            <div tabindex="1" class="articulos politica" id="politica">
+              <h2 class="icon-clear cerrar" onclick="cerrarPolitica();"></h2>
+              <div class="img-politica"><a href="/images/religion_logo.png" target="_blank"><img src="/images/reyes2.png" alt="los 4 reyes""></a></div>
+              <h2 class="titulo2"><u>Política</u></h2>
+              <p>
+              En Tautales, la ciudad más grande e importante, Gobierna el Rey Ulfur. Su legitimidad siempre ha sido puesta en duda porque fue el rey consorte de la verdadera heredera de esas tierras, la reina Kich de la dinastía Juper. Una dinastía querida por mucha gente. Más por los cuentos que se narran de esas épocas (que solo recuerdan las cosas buenas) que por lo que realmente significó esa dinastía para Tautaquelonde. El Rey Ulfur siempre está al borde de la caída, porque las cosas en aquellas tierras no han ido del todo bien. Entre enfermedades, sequías algunas guerras contra los seres del bosque Agurios; la gente no está conforme y piensa si no les iría mejor con cualquiera de los monarcas de las otras tierras.
+              </p>
+              <p>
+              Al Norte en su castillo de piedras blancas vive el Rey Lisandro. Muy interesado en los efectos de las plantas sagradas y creyendo que el secreto de un gran reino, descansa en las manos de Liberel y su poder de generar abundancia. Se cuenta que, en el catillo de Lisandro, en las mazmorras más profundas vive una antigua criatura que los más hombres de antaño adoraban con fervor y que los llevó a una guerra sagrada contra las criaturas de las montañas del norte y que la sangre pudo dejar de derramarse cuando esa criatura fue capturada. Pero todavía hay gente que piensa en que una criatura sagrada no puede permanecer encerrada y eso le causa ciertos problemas.
+              </p>
+              <p>
+              Calimino es una tierra rica y próspera por su ubicación estratégica en la bahía de Culmenar, donde se encuentran los puertos Agibotantes, principal entrada de mercaderías provenientes de más allá del mar de Santiago.  El Rey Atenor Gobierna en su trono de Espuma de mar en la habitación solar rodeado de Riquezas. La gente de Calimino vive con holgura y la mayor parte de su vida, feliz. Solo importunada por la llegada, no frecuente, pero tampoco rara de los piratas de las islas Dolvilas. Su gran preocupación es reforzar las defensas y la seguridad. Sin darse cuenta que muchos de los piratas son gente de las propias tierras de Tautaquelonde que han quedado fuera del cuidado de Atenor y viajado a las islas en busca de algún futuro.
+              </p>
+              <p>
+              Finalmente, pero no menos importante es Gaya La reina de los ojos tristes. Reina sin castillo ni reino. Pero de una estirpe real anterior a la dinastía Juper. Que se creyó perdida luego de que su último Rey, Etchcar, viajara más allá de los territorios Desconocidos por consejo de Mago Jores “el que engañó a la muerte”. El rey partió cuando una plaga azotó Tautales y no había otra cura que las hojas de espliego de los arroyos cantarines de Widsnor. Solo un rey podía cortar dichas hojas sin que pierdan su capacidad curativa. La cura llegó, pero el rey se perdió en algún lugar al norte de Tautaquelonde. Ahora Gaya, descendiente directa de Etchcar reclama su lugar en el Catillo de Jade. Sede del poder de Tautales y Tautaquelonde.
+              </p>
+              <script type="text/javaScript">
+                function mostrarPolitica() {
+                  document.getElementById('politica').style.display = 'block';
+                }
+                function cerrarPolitica() {
+                  document.getElementById('politica').style.display = 'none';
+                }
+              </script>
+            </div>
+
+            <div tabindex="1" class="articulos documentos" id="documentos">
+              <h2 class="icon-clear cerrar" onclick="cerrarHeraldica();"></h2>
+              <div class="img-heraldica"><a href="#" target="_blank"><img src="images/heraldica_logo2.png" alt="""></a></div>
+              <h2 class="titulo2"><u>Documentos y Registros</u></h2>
+              <p>
+                Los primeros datos de un un lugar llamado Tautaquelonde nos llegaron de la mano del historiador árabe  Majil Adib Kamal  del siglo III d.C. Que hizo una recopilación entera de ciertos personajes relevantes en la historia de esos territorios. En ellos podemos encontrar también breves descripciones de lugares y momentos importantes. Pero en lo que respecta a su geografía, organización política  y  muchos datos costumbrista, el mayor aporte es dado por escritos griegos de autores anónimos recolectados por Herodoto del sigli V a.C. Aunque nunca informa sus fuentes, estas pueden rastrearse hasta los papiros “La Mud” encontrados en la cuevas de la región cercanas al lago Al Wheda Dam en la frontera de Siria y Jordania. Tal vez esos sean los documentos más antiguos con los que contamos. 
+              </p>
+              <p>
+                En cuanto a las historias más detalladas de ciertos magos y hechiceras, casi en su totalidad provienen de el libro “Shīqù de quánlì” traducido al inglés como “the powers of old” que en su cuarta edición nos da una bibliografia a la cual podemos consultar por más detalles, y que incluyen los artículo publicados en “Nature Geografic”en los años comprendidos entre 1932 y 1935. Más el libro “Breves recopilaciones” de Autor anónimo fechada en 1837.
+              </p>
+              <p>
+                Las artes  Tautalenses influenciaron toda la cultura occidental hasta el siglo once. Podemos encontrar referencias en los cuadros no religiosos de aquella época. La literatura, y principalmente la poesía se ha venido recopilando desde su auge en Alejandría hasta nuestros días. Una gran parte de las poesías, aquí presentadas han sido encontradas en la Biblioteca Nacional de Estocolmo. Donde se conservaba como parte de la literatura precolombina de América del sur y América central. Aunque Gracias a su descubrimiento por el profesor Andrew Stevenson pudieron ser re catalogadas como Literatura Tautalense.
+              </p>
+              <script type="text/javaScript">
+                function mostrarHeraldica() {
+                  document.getElementById('documentos').style.display = 'block';
+                }
+                function cerrarHeraldica() {
+                  document.getElementById('documentos').style.display = 'none';
+                }
+              </script>
+            </div>
+        </section>    
+    </main>
+   
+
+    <footer>
+      <div class="iner">
+        <ul class="icons">
+          <li class="icon"><a href="#" ><span class="label"><img src="images/facebook.png" alt="" class="iamgen"></span></a></li>
+          <li class="icon"><a href="#" ><span class="label"><img src="images/twitter.png" alt=""class="iamgen"></span></a></li>
+          <li class="icon"><a href="#" ><span class="label"><img src="images/instagram.png" alt=""class="iamgen"></span></a></li>
+          <li class="icon"> <a href="#" ><span class="label"><img src="images/linkedin.png" alt=""class="iamgen"></span></a></li>
+        </ul>
+      </div>
+      <h4 class="copy"> &copy; Derechos Reservados 2022 - Autor: Rodrigo Benavides</h4>
+    </footer>
+  </div> 
+</body>
+</html>
